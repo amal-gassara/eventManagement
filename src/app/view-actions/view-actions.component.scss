@@ -1,0 +1,29 @@
+div {
+    display: flex;
+    align-items: center;
+    padding-left: 35%;
+    margin-top: 100px;
+  
+    label {
+      margin-right: 10px;
+    }
+  
+    select,
+    input {
+      padding: 8px;
+      font-size: 14px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  
+      &:focus {
+        outline: none;
+        border-color: #4c4caf;
+        box-shadow: 0 0 5px rgba(76, 76, 175, 0.5);
+      }
+    }
+  
+    select {
+      cursor: pointer;
+    }
+  }

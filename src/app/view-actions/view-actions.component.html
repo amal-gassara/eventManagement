@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<br><br><br><br><br>
+<app-action-list [filter]="actionFilter"></app-action-list>
+
+<div>
+  <label for="actionFilter">Filter actions by    :</label>
+  <select [(ngModel)]="selectedFilter" (ngModelChange)="updateFilter()">
+    <option value="name">Name</option>
+    <option value="objective">Objective</option>
+    <option value="responsible">Responsible</option>
+  </select>
+  <input type="text" id="actionFilter" [(ngModel)]="actionFilter" />
+</div>
+
+<app-footer></app-footer>

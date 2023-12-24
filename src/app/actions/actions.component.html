@@ -1,0 +1,32 @@
+<br><br><br><div class="custom-form">
+  
+  <h2>Add a new action &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+  <form (ngSubmit)="onSubmit()" [formGroup]="actionForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Name" formControlName="inputActionName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="objective">Objective:</label>
+      <input type="text" id="objective" placeholder="Objective" formControlName="inputObjectif" required>
+    </div>
+
+    <div class="form-group">
+      <label for="responsible">Responsible:</label>
+      <input type="text" id="responsible" placeholder="Responsible" formControlName="inputResponsible" required>
+    </div>
+
+    <div class="form-group">
+      <label for="beneficiaries">Recipients:</label>
+      <input type="number" id="beneficiaries" placeholder="Recipients" formControlName="inputNbPres" required>
+    </div>
+
+    <div class="form-group">
+      <label for="creationDate">Creation date:</label>
+      <input type="date" id="creationDate" formControlName="inputDate" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!actionForm.valid">Create</button>
+  </form>
+</div>
